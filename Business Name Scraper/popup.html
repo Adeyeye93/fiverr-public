@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>Business Name Scraper</title>
+  </head>
+  <link rel="stylesheet" href="./popup.css" />
+  <body>
+    <div class="loader" id="loader">
+      <svg id="load" viewBox="25 25 50 50">
+        <circle r="20" cy="50" cx="50"></circle>
+      </svg>
+      <img id="complete" style="display: none;" src="./checkmark.png" alt="">
+      <p id="status">Extracting...</a></p>
+    </div>
+      <div class="top">
+        <div id="logo" class="ubuntu-medium">
+          <img style="margin-right: 10px;" width="20px" src="./lcon2.png" alt="logo">
+          <p>Name Picker</p>
+        </div>
+        <div id="input">
+          <input class="ubuntu-bold" type="text" placeholder="Find business" id="inputs">
+          <button id="startButton"><svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-search"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+        />
+      </svg></button>
+        </div>
+          <div class="container">
+            <div class="tabs">
+              <input type="radio" id="radio-2" name="tabs" />
+              <label class="tab" for="radio-2">Picker</label>
+              <input type="radio" id="radio-3" name="tabs" />
+              <label class="tab" for="radio-3">Saved</label>
+              <span class="glider"></span>
+            </div>
+          </div>
+        </div>
+      <div class="bottom">
+        <div class="cont" id="div-picker">
+          <p>Records</p>
+          <button id="clear" class="all">Clear all</button>
+          <ul id="selected">
+            
+          </ul>
+          <button id="start" class="btn">
+            Start
+          </button>
+
+        </div>
+        <div class="cont" id="div-saved" style="display: none;">
+          <p>Saved Records</p>
+          <ul id="saved">
+          </ul>
+      </div>
+       <div class="cont" id="div-empty" style="display: none;">
+          <p>Records - None</p>
+          <img src="./empty-folder.png" alt="">
+
+        </div>
+  </body>
+  <script src="popup.js"></script>
+</html>
+
+
+

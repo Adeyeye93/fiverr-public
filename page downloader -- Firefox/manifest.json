@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Download Page Source",
+  "version": "1.0",
+  "description": "Downloads the page source from the browser's cache when you visit a page.",
+  "permissions": ["tabs", "downloads"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}
